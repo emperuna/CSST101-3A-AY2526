@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assessment Task 04 - Non-Monotonic Reasoning and Belief Revision">
+  <title>AT-04: Non-Monotonic Reasoning | CSST101-3A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="../assets/css/theme.css">
+</head>
+<body class="font-sans antialiased text-gray-100 bg-[#030712]">
+  <div class="fixed inset-0 animated-grid pointer-events-none"></div>
+  <div class="fixed inset-0 hero-glow pointer-events-none"></div>
+  <!-- Navigation (injected by components.js) -->
+  <div id="navbar-slot"></div>
+  <main class="pt-28 pb-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <a href="../activities.html" class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-amber-400 mb-8"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>Back to Activities</a>
+      <div class="mb-10">
+        <span class="inline-block px-4 py-1.5 text-xs font-semibold text-amber-400 bg-amber-500/10 rounded-full mb-4">Assessment Task 04</span>
+        <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight mb-4">Non-Monotonic Reasoning</h1>
+        <p class="text-gray-400">Python Script • Draw.io Diagram • PDF Documentation</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 space-y-6">
+          <div class="glass-card p-8"><h2 class="text-xl font-bold mb-4">Overview</h2><p class="text-gray-400 leading-relaxed">A <span class="text-white font-medium">bird reasoner</span> demonstrating non-monotonic logic — where new information can invalidate previous conclusions. The system applies default reasoning (birds can fly) then revises beliefs when exceptions are discovered.</p></div>
+          <div class="glass-card p-8"><h2 class="text-xl font-bold mb-4">Key Features</h2><ul class="space-y-3 text-gray-400"><li class="flex items-start gap-2"><svg class="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Default rule: "If X is a bird, assume X can fly"</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Exception handling for flightless birds</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Known exceptions: penguin, ostrich, kiwi, emu, cassowary, dodo</li><li class="flex items-start gap-2"><svg class="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Step-by-step reasoning trace output</li></ul></div>
+          <div class="glass-card p-8"><h2 class="text-xl font-bold mb-4">AI Concepts</h2><div class="flex flex-wrap gap-2"><span class="px-4 py-2 text-sm font-medium text-amber-400 bg-amber-500/10 rounded-xl border border-amber-500/20">Non-Monotonic Logic</span><span class="px-4 py-2 text-sm font-medium text-violet-400 bg-violet-500/10 rounded-xl border border-violet-500/20">Belief Revision</span><span class="px-4 py-2 text-sm font-medium text-cyan-400 bg-cyan-500/10 rounded-xl border border-cyan-500/20">Default Reasoning</span><span class="px-4 py-2 text-sm font-medium text-blue-400 bg-blue-500/10 rounded-xl border border-blue-500/20">Exception Handling</span></div></div>
+        </div>
+        <div class="space-y-6">
+          <div class="glass-card p-6"><h2 class="text-lg font-bold mb-4">Files</h2><div class="space-y-3"><a href="../coursework/assessment-task-04/bird_reasoner.py" download class="flex items-center justify-between p-4 bg-white/5 rounded-xl hover:bg-white/10"><span class="text-sm font-medium text-gray-300">bird_reasoner.py</span><span class="text-xs font-medium text-amber-400">Download</span></a><a href="../coursework/assessment-task-04/arguement_framework.drawio" download class="flex items-center justify-between p-4 bg-white/5 rounded-xl hover:bg-white/10"><span class="text-sm font-medium text-gray-300">arguement_framework.drawio</span><span class="text-xs font-medium text-amber-400">Download</span></a><a href="../coursework/assessment-task-04/assessment_task4_garin_csst101.pdf" target="_blank" class="flex items-center justify-between p-4 bg-white/5 rounded-xl hover:bg-white/10"><span class="text-sm font-medium text-gray-300">assessment_task4...pdf</span><span class="text-xs font-medium text-amber-400">View PDF</span></a></div></div>
+          <div class="glass-card p-6"><h2 class="text-lg font-bold mb-4">How to Run</h2><div class="bg-[#030712] rounded-xl border border-white/5 p-4"><code class="text-sm font-mono text-amber-400">python bird_reasoner.py</code></div><p class="text-sm text-gray-400 mt-4">Enter animal names and watch the reasoning process unfold.</p></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-slot"></div>
+  <script src="../assets/js/components.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

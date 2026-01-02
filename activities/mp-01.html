@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Machine Problem 01 - Mini Expert System implementing propositional logic">
+  <title>MP-01: Mini Expert System | CSST101-3A</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/js/tailwind.config.js"></script>
+  
+  <!-- Theme Styles -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+</head>
+<body class="font-sans antialiased text-gray-100 bg-dark-900">
+  <!-- Animated Background -->
+  <div class="fixed inset-0 animated-grid pointer-events-none"></div>
+  <div class="fixed inset-0 hero-glow pointer-events-none"></div>
+  
+  <!-- Navigation (injected by components.js) -->
+  <div id="navbar-slot"></div>
+
+  <!-- Activity Detail -->
+  <main class="pt-28 pb-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Breadcrumb -->
+      <a href="../activities.html" class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-accent-cyan mb-8 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Back to Activities
+      </a>
+      
+      <!-- Header -->
+      <div class="mb-10">
+        <span class="inline-block px-4 py-1.5 text-xs font-semibold text-accent-blue bg-accent-blue/10 rounded-full mb-4">Machine Problem 01</span>
+        <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight mb-4">Mini Expert System</h1>
+        <div class="flex flex-wrap gap-4 text-sm text-gray-400">
+          <span class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            Python Script
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            PDF Documentation
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            September 2025
+          </span>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Main Content -->
+        <div class="lg:col-span-2 space-y-6">
+          <div class="glass-card p-8">
+            <h2 class="text-xl font-bold mb-4">Overview</h2>
+            <p class="text-gray-400 leading-relaxed">
+              A university logic rules system implementing <span class="text-white font-medium">propositional logic</span> 
+              with implication operators (P → Q). The system evaluates various academic rules 
+              using logical conditions and produces human-readable results.
+            </p>
+          </div>
+
+          <div class="glass-card p-8">
+            <h2 class="text-xl font-bold mb-4">Key Features</h2>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-lg bg-accent-cyan/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Attendance rule checker (late + excuse letter)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-lg bg-accent-cyan/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Grading rule evaluation (pass/fail logic)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-lg bg-accent-cyan/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Login system simulation</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-lg bg-accent-cyan/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Bonus points eligibility checker</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-lg bg-accent-cyan/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Library borrowing rule verification</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-lg bg-accent-cyan/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-gray-300">CSV logging for all results</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-card p-8">
+            <h2 class="text-xl font-bold mb-4">AI Concepts</h2>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-4 py-2 text-sm font-medium text-accent-blue bg-accent-blue/10 rounded-xl border border-accent-blue/20">Propositional Logic</span>
+              <span class="px-4 py-2 text-sm font-medium text-accent-violet bg-accent-violet/10 rounded-xl border border-accent-violet/20">Implication (P → Q)</span>
+              <span class="px-4 py-2 text-sm font-medium text-accent-cyan bg-accent-cyan/10 rounded-xl border border-accent-cyan/20">Rule-Based Systems</span>
+              <span class="px-4 py-2 text-sm font-medium text-accent-amber bg-accent-amber/10 rounded-xl border border-accent-amber/20">Expert Systems</span>
+            </div>
+          </div>
+
+          <!-- Code Preview -->
+          <div class="glass-card p-8">
+            <h2 class="text-xl font-bold mb-4">Code Snippet</h2>
+            <div class="bg-dark-900 rounded-xl border border-white/5 overflow-hidden">
+              <div class="flex items-center gap-2 px-4 py-3 border-b border-white/5">
+                <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                <span class="ml-2 text-xs text-gray-500 font-mono">mini-expert-system.py</span>
+              </div>
+              <pre class="p-6 text-sm font-mono overflow-x-auto"><code class="text-gray-300"><span class="text-gray-500"># Logic function - Implication (P → Q)</span>
+<span class="text-accent-violet">def</span> <span class="text-accent-cyan">impl</span>(P, Q):
+    <span class="text-accent-violet">return</span> (<span class="text-accent-violet">not</span> P) <span class="text-accent-violet">or</span> Q
+
+<span class="text-gray-500"># Attendance Rule Checker</span>
+<span class="text-accent-violet">def</span> <span class="text-accent-cyan">attendance_rule</span>(student_name):
+    late = input(<span class="text-green-400">"Was the student late? (T/F): "</span>)
+    excuse = input(<span class="text-green-400">"Did the student provide an excuse? (T/F): "</span>)
+    
+    result = impl(late, excuse)
+    outcome = <span class="text-green-400">"Satisfied"</span> <span class="text-accent-violet">if</span> result <span class="text-accent-violet">else</span> <span class="text-green-400">"Violated"</span>
+    print(<span class="text-green-400">f"Result: {outcome}"</span>)</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="space-y-6">
+          <div class="glass-card p-6">
+            <h2 class="text-lg font-bold mb-4">Files</h2>
+            <div class="space-y-3">
+              <a href="../coursework/machine-problem-01/mini-expert-system.py" download class="flex items-center justify-between p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-accent-blue/10 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-medium text-gray-300">mini-expert-system.py</span>
+                </div>
+                <svg class="w-5 h-5 text-gray-500 group-hover:text-accent-cyan transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+              </a>
+              <a href="../coursework/machine-problem-01/mini-expert-system.pdf" target="_blank" class="flex items-center justify-between p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-accent-violet/10 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-accent-violet" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-medium text-gray-300">mini-expert-system.pdf</span>
+                </div>
+                <svg class="w-5 h-5 text-gray-500 group-hover:text-accent-cyan transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="glass-card p-6">
+            <h2 class="text-lg font-bold mb-4">How to Run</h2>
+            <div class="bg-dark-900 rounded-xl border border-white/5 p-4">
+              <code class="text-sm font-mono text-accent-cyan">python mini-expert-system.py</code>
+            </div>
+            <p class="text-sm text-gray-400 mt-4">
+              Follow the interactive prompts to test different university rules.
+            </p>
+          </div>
+
+          <div class="glass-card p-6">
+            <h2 class="text-lg font-bold mb-4">Quick Links</h2>
+            <div class="space-y-2">
+              <a href="../activities.html" class="flex items-center gap-3 p-3 text-sm text-gray-400 hover:text-white hover:bg-white/5 rounded-lg transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+                </svg>
+                All Activities
+              </a>
+              <a href="https://github.com/emperuna/CSST101-3A-AY2526/tree/main/activity/machine-problem-01" target="_blank" class="flex items-center gap-3 p-3 text-sm text-gray-400 hover:text-white hover:bg-white/5 rounded-lg transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-slot"></div>
+
+  <script src="../assets/js/components.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
